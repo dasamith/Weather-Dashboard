@@ -154,7 +154,7 @@ https://dasamith.github.io/homework5/
 
 ## Screenshot
 
-![Screenshot](ScreenShot/sc.JPG)
+![Screenshot](image/Capture.JPG)
 
 ## API Reference
 
