@@ -5,47 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css" />
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+
 </head>
 
 <body>
-    <div>
-        <h1 style="text-align: center;">Weather Dashboard</h1>
-    </div>
-    <div class="container">
-        <div style="float: left;">
-            <P>Search for city</P>
-            <p>
-                <input type="text" placeholder="Enter City" id="enterCity">
-                <button>Go</button>
-            </p>
+    <header>
+        <!-- Heading for this App -->
+        <h1>Weather App</h1>
+    </header>
+
+    <section>
+        <!-- Nav contains input serch button and
+             it will display search iteam -->
+        <nav>
+            <input typa="input" placeholder="Enter city..." id="userInput">
+            <button id="btnSearch">Load</button>
+            <div id="saveSearch"></div>
+        </nav>
+        <!-- Article will display current weather -->
+        <article>
+            <h1 class="location0">Location</h1>
+            <img class="icon0">
+            <p class="weather0">--</p>
+            <p class="temp0">Temperature: </p>
+            <p class="feelsLike0">Feels Like: </p>
+            <p class="humidity">Humidity: </p>
+        </article>
+    </section>
+    <!-- Footer will display forcast for 5 days -->
+    <footer>
+        <div class="d1">
+            <h3 class="date1">
+                </h1>
+                <img class="icon1">
+                <p class="weather1"></p>
+                <p class="temp1"></p>
+                <p class="feelsLike1"></p>
         </div>
-    </div>
-    <ul class="list-group">
-        <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-    <div class="container">
-        <div class="card text-white bg-secondary mb-3"
-            style="max-width: 30rem; display: inline-block; margin-left: 300px; margin-top: 30px;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <p class="card-title">temp</p>
-                <p id="humidity">Humidity</p>
-                <p class="card-text">wind</p>
-                <p id="humidity">UV</p>
-
-            </div>
+        <div class="d2">
+            <h3 class="date2">
+                </h1>
+                <img class="icon2">
+                <p class="weather2"></p>
+                <p class="temp2"></p>
+                <p class="feelsLike2"></p>
         </div>
+        <div class="d3">
+            <h3 class="date3">
+                </h1>
+                <img class="icon3">
+                <p class="weather3"></p>
+                <p class="temp3"></p>
+                <p class="feelsLike3"></p>
+        </div>
+        <div class="d4">
+            <h3 class="date4">
+                </h1>
+                <img class="icon4">
+                <p class="weather4"></p>
+                <p class="temp4"></p>
+                <p class="feelsLike4"></p>
+        </div>
+        <div class="d5">
+            <h3 class="date5">
+                </h1>
+                <img class="icon5">
+                <p class="weather5"></p>
+                <p class="temp5"></p>
+                <p class="feelsLike5"></p>
+        </div>
+    </footer>
 
 
 
-
+    <script src="assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
