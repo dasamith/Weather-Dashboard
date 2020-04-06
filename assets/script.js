@@ -13,7 +13,7 @@ if (btnSearch) {
         store(cityName);
         console.log(items);
 
-        // displayStorage();
+        displayStorage();
         displaySearch(cityName);
 
 
