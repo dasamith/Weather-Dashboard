@@ -59,7 +59,7 @@ tools: (to be used):
 
 ## Installation
 
-https://dasamith.github.io/homework5/
+https://dasamith.github.io/Weather-Dashboard/
 
 ## Screenshot
 
