@@ -13,7 +13,7 @@ if (btnSearch) {
         store(cityName);
         console.log(items);
 
-        displayStorage();
+        // displayStorage();
         displaySearch(cityName);
 
 
@@ -35,6 +35,8 @@ function loadData(city) {
         function (data) {
             console.log(data);
 
+            var today = new Date();
+
             var location = data.name;
             var icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
             var weather = data.weather[0].main;
@@ -42,7 +44,7 @@ function loadData(city) {
             var feelsLike = "Feels Like: " + data.main.feels_like;
             var hum = "humidity: " + data.main.humidity;
 
-            $('.location0').html(location);
+            $('.location0').html(location + " " + today.toLocaleDateString());
             $('.icon0').attr('src', icon);
             $('.weather0').html(weather);
             $(".temp0").html("Temperature: " + temp);
